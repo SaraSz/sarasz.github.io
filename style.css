@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme');
+
+body {
+  margin: 0 auto;
+  display: inline-flex;
+  margin-left: 20%;
+  margin-top: 2%;
+  background-image: url("saraszajewska.jpg");
+  background-size: auto;
+  font-family: BioRhyme;
+}
+
+a {
+  color: #6F2345;
+}
+
+a:hover {
+  color: dimgray;
+}
+
+#canvasDiv, #uxDiv, #booksDiv, #firebaseDiv {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #ECF2A1;
+  line-height: 12;
+  text-align: center;
+  border: none;
+  z-index: 50;
+}

@@ -1,30 +1,195 @@
-@import url('https://fonts.googleapis.com/css?family=BioRhyme');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC:300');
+ @import url('https://fonts.googleapis.com/css?family=Nosifer');
+
+html {
+	height: 100%;
+}
 
 body {
-  margin: 0 auto;
-  display: inline-flex;
-  margin-left: 20%;
-  margin-top: 2%;
-  background-image: url("saraszajewska.jpg");
-  background-size: auto;
-  font-family: BioRhyme;
+	min-height: 100%;
+	font-family: "Cormorant SC:";
 }
 
-a {
-  color: #6F2345;
+h1 {
+	text-align: center;
+	font-weight: lighter;
+	letter-spacing: 4px;
 }
 
-a:hover {
-  color: dimgray;
+.header-container {
+ /*display: flex;*/
+ flex-direction: column;
+ /*padding: 0.8em 0;*/
+	border-bottom: 1px solid grey;
 }
 
-#canvasDiv, #uxDiv, #booksDiv, #firebaseDiv {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  background-color: #ECF2A1;
-  line-height: 12;
-  text-align: center;
-  border: none;
-  z-index: 50;
+.logo {
+ margin-left: 5%;
+}
+
+nav {
+	/*margin: 1.5em 0 0 18%;*/
+	font-family: "Cormorant SC";
+	font-size: 40px;
+}
+
+.zoom {
+	transition: transform .2s;
+}
+
+.zoom:hover {
+	transform: scale(1.2); 
+  
+}
+
+.zab {
+	opacity: 0.4;
+
+}
+
+header ul li {
+ display: inline-block;
+ padding: 0 1.4em 0 0;
+ font-size: 1em;
+}
+
+header ul li a {
+ text-decoration: none;
+ color: black;
+}
+
+li a.active {
+ color: #000000;
+ border-bottom: 2px solid #bd615e;
+ font-weight: 300;
+}
+
+li a:hover {
+	color: lightgray;
+}
+
+
+section {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+
+p {
+	display: inline-block;
+
+}
+
+.mailto:hover {
+	opacity: 0.5;
+}
+
+.media { 
+	min-width: 0;
+	margin: 5px;
+	max-width: 100%;
+ }
+
+img {
+ 	width: 450px;
+ 	max-width: 100%; 
+ 	max-height: 100%; 
+ }
+
+footer {
+	border-top: 1px solid grey; 
+	bottom: 0;
+}
+
+
+.fa {
+	font-size: 26px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	/*margin: 5px 2px;*/
+}
+
+.fa:hover {
+   opacity: 0.6;
+}
+
+.fa-facebook, .fa-instagram, .fa-youtube{
+  color: #bd615e;
+}
+
+
+/*****MEDIA QUERYS*****/
+
+@media screen and (min-width : 800px) {
+ .header-container {
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+.logo {
+   margin-left: 2.3em;
+ }
+
+ nav {
+   align-self: center;
+   margin: 0 0.8em 0 0;
+ }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+   .header-container {
+   	flex-direction: column;
+ }
+  
 }

@@ -92,15 +92,11 @@ footer .icons {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	
+	transform: translate(-50%, -50%);	
 }
 
-footer .email {
-	position: absolute;
-	top: 20%;
-	left: 43%;
-	font-size: 16px;
+i:hover {
+   opacity: 0.5;
 }
 
 /*Media queries*/
@@ -109,6 +105,7 @@ footer .email {
 	header h1 {
 		font-size: 20px;
 		margin-left: 5px;
+		letter-spacing: none;
 	}
 	
 	header .bottom {
